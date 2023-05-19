@@ -5,7 +5,7 @@ Array.from({length: 26}, (_, i) => String.fromCharCode(i + 65)).forEach(i => {
 	el.on("click", e => {
 		if($("#active")) $("#active").removeAttribute("id");
 		el.id = "active";
-		$(".letter-image-section")[0].children[0].src = "img/hand_" + i + ".png";
+		$(".letter-image-section")[0].children[0].src = "img/hand_" + i.toLowerCase() + ".png";
 	});
 	ls.appendChild(el);
 });
@@ -19,7 +19,7 @@ for (var j = 65; j <= 90; j++) {
   gridCell.classList.add("grid-cell");
 
   var image = document.createElement("img");
-  image.src = "img/hand_" + letter + ".png";
+  image.src = "img/hand_" + letter.toLowerCase() + ".png";
   gridCell.appendChild(image);
 
   var letterSpan = document.createElement("span");
