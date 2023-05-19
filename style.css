@@ -281,6 +281,10 @@ footer {
     html {
       font-size: 11px;
     }    
+	
+    .wrapper {
+        margin: 0;
+    }
 
     .home-grid-container {
         display: grid;
@@ -293,6 +297,7 @@ footer {
           "section-third-row"
           "footer";
         margin: 0 3rem;
+	padding: 0;
     }
 
     .section-title {
