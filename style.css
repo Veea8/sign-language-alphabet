@@ -279,7 +279,7 @@ footer {
 /* 1040px */
 @media only screen and (max-width: 55em) {
     html {
-      font-size: 11px;
+      font-size: 12px;
     }    
 	
     .wrapper {
